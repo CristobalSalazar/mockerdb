@@ -9,9 +9,9 @@ First build the container
 ```bash
 docker build -t mockerdb .
 ```
-Then run it
+Then run it with the appropriate MONGODB_URL, in this example we use a mongodb atlas url
 ```bash
-docker run -it -e MONGODB_URL=yourmongourl -p 27017:27017 mockerdb
+docker run -it -e MONGODB_URL=mongodb+srv://<username>:<password>@cluster.mongodb.net -p 27017:27017 mockerdb
 ```
 
 If you wish to only connect it to other containers you may skip the -p flag
