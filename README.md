@@ -1,10 +1,10 @@
 # mockerdb
 
-A containerized mongodb implementation that allows you to copy databases and connect to them locally or via other containers.
+A dockerized mongodb implementation that copies remote databases and connects to them locally or via other containers.
 
-Useful for development environments where you want to have access to production data without affecting it.
+Useful for development environments where you want to have access to production data without affecting the production environment
 
-## Use
+## Usage
 
 First build the container
 ```bash
